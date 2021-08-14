@@ -1,0 +1,36 @@
+IndexOf 
+	//search by complete value from starting to ending
+	console.log(myFriendNames.indexOf ("thapas"));
+lastIndexOF 
+	////search by complete value from starting to ending
+	console.log(myFriendNames.lastIndexOf ("thapas"));
+includes 
+	//Check true false that value is avaialble or not
+	console.log(myFriendNames.includes("thapas"));
+find	
+	//return one value checking by condition
+	console.log(prices.find((parameter)=> parameter >num))
+findIndex
+	//return only one value's index
+	console.log(  prices.findIndex((currVal) => currVal > 350 )  );
+filter 
+	//retrun all the values which statisfied the condition
+	console.log( prices.filter((element,index )=> {
+	//return element > 450
+	//return index >= 3
+	//return  elem > 500 && index >= 2;
+	}) 
+Sort	
+	//return all data of array by assending to descending order
+	console.log(months.sort())
+	//note 
+	// However, if numbers are sorted as strings, lets assume
+	// "25" is bigger than "100", because "2" is bigger than "1".
+	// Because of this, the sort() method will produce an incorrect 
+	// result when sorting numbers.
+Reverse
+	retrurn all the array with last to one	
+	console.log(months.reverse())
+
+Sorting in descendiing Order
+	console.log(months.reverse(months.sort()))

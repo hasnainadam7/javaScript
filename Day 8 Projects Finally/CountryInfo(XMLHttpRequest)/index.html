@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <style>
+        body {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <span class="flag" id="flag"></span>
+        <select class="form-select" aria-label="Default select example" class="countries" name="countries"
+            id="countries"></select>
+        <div class="row  justify-content-md-center">
+            <div class="col">
+
+            </div>
+            <div class="col-6" style="display: flex;float: left;">
+                <div class="col-2">
+
+                </div>
+                <div class="col-6">
+                    <div class="card list-group list-group-flush "
+                        style="width: 18rem;justify-content: center;display: flex; ">
+                        <img src="" class="card-img-top" id="flags" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title" id="name">Card title</h5>
+                            <p class="card-text" id="about">Some quick example text to build on the card title and make
+                                up the bulk of
+                                the card's content.</p>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item" id="capital">An item</li>
+                            <li class="list-group-item" id="population">A second item</li>
+                            <li class="list-group-item" id="language">unAvailable</li>
+                        
+                        </ul>
+
+                    </div>
+                </div>
+                <div class="col-2">
+
+                </div>
+
+            </div>
+            <div class="col">
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+        crossorigin="anonymous"></script>
+     <script>
+         const requst = new XMLHttpRequest();
+const xhttp = new XMLHttpRequest();
+const select = document.getElementById("countries");
+const flag = document.getElementById("flag");
+
+
+
+
+
+
+let countries;
+
+xhttp.onreadystatechange = function () {
+    if (this.readyState == 4 && this.status == 200) {
+        countries = JSON.parse(xhttp.responseText);
+        assignValues();
+        handleCountryChange();
+    }
+};
+xhttp.open("GET", "https://restcountries.eu/rest/v2/all", true);
+xhttp.send();
+
+function assignValues() {
+    countries.forEach(country => {
+        const option = document.createElement("option");
+        option.value = country.name;
+        option.textContent = country.name;
+        select.appendChild(option);
+    });
+}
+
+function handleCountryChange() {
+    const countryData = countries.find(
+        country => select.value === country.name
+    );
+    flag.style.backgroundImage = `url(${countryData.flag})`;
+}
+
+select.addEventListener("change", handleCountryChange.bind(this));
+requst.open('GET', "https://restcountries.eu/rest/v2/name/"+"palestine");
+requst.send();
+
+//to get the response
+
+requst.addEventListener('load',function () {
+
+const [data] = JSON.parse(this.responseText)
+console.log(data)
+
+document.querySelector("#flags").src = data.flag
+document.querySelector("#name").innerHTML = data.name
+document.querySelector("#about").innerHTML = data.altSpellings
+document.querySelector("#population").innerHTML = "Capital :" + data.capital 
+document.querySelector("#capital").innerHTML = " Population :" + data.population.toLocaleString()
+document.querySelector("#language").innerHTML = "Language :" + data.languages[1].name + "("+data.languages[1].nativeName +")"
+} )
+
+     </script>
+</body>
+
+</html>

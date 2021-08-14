@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Increment Counter</title>
+    <script src="https://kit.fontawesome.com/8b9d078c87.js" crossorigin="anonymous"></script>
+<style>
+    body{
+        display: gird;
+        align-items: center;
+        background:#00154f;
+        margin-top: 300px;
+    }
+    .centerDiv{
+     
+            width: 1000px;
+            height: 300px;
+            margin: 0 auto;
+            background-color: white;
+            border-radius: 9px;
+            text-align: center;
+            justify-content: center;
+
+    }
+    .fas{
+        padding-left: 0%;
+        margin-top:70px;
+        font-size: 100px;
+    }
+    .innerDiv{
+        align-items: center;
+float: left;
+        width: 33%;
+    }
+</style>
+</head>
+
+<body>
+    <div class="centerDiv">
+        <div class="innerDiv">
+            <i class="fas  fa-tasks"></i>
+    
+            <br>
+            <h1 class="counter" data-target="4000" >4000</h1>    
+    
+            <p>Task Complete Succusfully</p>
+        </div>
+        
+        <div class="innerDiv">
+            <i class="fas fa-users"></i>
+            
+            <br>
+            <h1 class="counter" data-target="15000" >4000</h1>
+ 
+            <p>Positive FeedBacks by clients</p>
+        </div>
+        
+        <div class="innerDiv">
+            <i class="fas fa-clipboard-list"></i>
+            
+            <br>
+            <h1 class="counter" data-target="500" >4000</h1>
+        
+            <p>OnGoing Tasks</p>
+        </div>
+    </div>
+    <script>
+        const counter = document.querySelectorAll(".counter")
+        counter.forEach(( counts)=>{
+
+           counts.innerHTML=+0;
+
+           const updateCounter=()=>{
+                //now this is in string 
+             const targetCount=counts.getAttribute('data-target')
+             //above data is string so we have to perfom operation in numbers therofore
+             var targetCountInt =+targetCount
+             const startCount=+counts.innerHTML
+             const incr=targetCountInt/100;
+             if (startCount<targetCountInt){
+                 counts.innerHTML=Math.round( startCount+incr)
+                 setTimeout(updateCounter,10 )
+             }else{
+                 counts.innerHTML=targetCount;
+             }
+          
+           }
+           updateCounter()
+        })
+    </script>
+</body>
+</html>

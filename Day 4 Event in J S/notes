@@ -1,0 +1,47 @@
+//there are 4 ways of wrinting events in javascript
+
+1)calling events by alert
+2)by calling a functions
+3)using inline events(HTML onclick="" property and element.onclick)
+4)event listners(AddEvebtListner and ie 's attachevents)
+
+
+//differnce betweeninline event amd AddEvebtListner
+if we use the multiple times of functions with same event 
+inline will override and call the last one function
+AddEvebtListner will call all of them
+
+
+for example
+        const thirdWays = document.getElementById('thirdWay');
+    
+        thirdWays.onclick = ()=>{
+                    alert("this is 3rd way of wrinting func")
+        };
+
+        thirdWays.onclick = ()=>{
+            console.log("this is 3rd way of wrinting func")
+        };
+
+
+//thirdWay will show the console output
+
+        const fourway = document.getElementById('fourthWay');
+        fourway.addEventListener("click", () => {
+            alert("4th type of calling functions and eventings")
+        })
+        const fourway = document.getElementById('fourthWay');
+        fourway.addEventListener("click", () => {
+            console.log("4th type of calling functions and eventings")
+        })
+this will show both one by one
+
+
+diff
+
+
+
+
+
+
+ 

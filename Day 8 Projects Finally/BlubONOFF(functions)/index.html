@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+    <style>
+        .btn-warning {
+            margin-top: 80px;
+            color: white;
+            width: 220px;
+            border-radius: 3px 4px;
+        }
+
+        .btn-warning:hover {
+            color: #ffc107;
+            background: white;
+        }
+
+        .btn-warning:active {
+            color: #ffc107;
+            background: white !important;
+
+        }
+    </style>
+</head>
+
+<body style="background:#00154f;margin-top: 200px;">
+    <div
+        style="width:800px; height: 600px;margin:0 auto;background-color: white; ;border-radius: 9px;text-align: center;justify-content: center;">
+        <div style="color:gray;padding-top: 30px;">
+            <h4>
+            </h4>
+        </div>
+        <div id="jokes" style="padding-top: 45px;">
+            <img src="./imges/off.jpg" id="imgs" alt="" srcset="">
+        </div>
+        <div style="color:gray;padding-top: 30px;">
+            <button type="button" id="btnOn" class="btn btn-warning">On</button>
+
+            <button type="button" id="btnOff" class="btn btn-warning">Off</button>
+        </div>
+    </div>
+    <script>
+        const on = document.querySelector("#btnOn")
+
+        const off = document.querySelector("#btnOff")
+        const blub = document.querySelector("#imgs")
+
+        on.addEventListener("click",
+            () => {
+                
+                blub.src = "./imges/on.png"
+
+            }
+        )
+
+        off.addEventListener("click",
+            () => {
+                blub.src = "./imges/off.jpg"
+
+            }
+        )
+    </script>
+</body>
+
+</html>

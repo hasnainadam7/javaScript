@@ -1,0 +1,109 @@
+.fa-sticky-note {
+    color: #ffc107 !important;
+    border-color: #ffc107;
+
+}
+
+
+.btn-outline-warning {
+    border-radius: 50% !important;
+    border-color: #ffc107 !important;
+    box-shadow: 2px 2px 2px 2px #ffc107 !important;
+    border-color: #ffc107 !important;
+    color: #ffc107 !important;
+    background: white !important;
+}
+
+.btn-outline-warning:hover {
+    background-color: #ffc107 !important;
+    color: whitesmoke !important;
+    border-color: whitesmoke !important;
+    box-shadow: 2px 2px 2px 2px #ffc107 !important;
+}
+
+.btn-outline-warning:active {
+    background-color: #ffc107 !important;
+    color: whitesmoke !important;
+    border-color: whitesmoke !important;
+    box-shadow: 2px 2px 2px 2px #ffc107 !important;
+}
+
+.note {
+    margin-left: 30px;
+    margin-top: 40px;
+    width: 310px;
+
+
+    float: left;
+    height: 400px;
+    background: white;
+    color: #ffc107;
+    box-shadow: 1px 1px 1px 1px #ffc107 !important;
+
+}
+
+.operation {
+    float: right;
+
+}
+
+.heading {
+    align-items: center;
+    display: grid;
+    text-align: center;
+    height: 40px;
+    width: 100%;
+    background: white;
+    color: #ffc107;
+}
+
+.delete,
+.edit {
+    background-color: white !important;
+    color: rgb(120, 252, 120);
+    border: transparent;
+    justify-content: right;
+
+}
+
+.delete:hover,
+.edit:hover {
+    color: white !important;
+    background-color: rgb(120, 252, 120) !important;
+    border-radius: 3px;
+    box-shadow: 1px 1px 1px 1px gray !important;
+
+}
+
+.delete {
+    color: rgb(252, 120, 120);
+
+
+}
+
+.delete:hover {
+    background-color: rgb(252, 120, 120) !important;
+}
+
+.operation {
+    padding-right: 5px;
+    height: 7%;
+
+}
+
+.main {
+    padding-top: 40px;
+    width: 100%;
+}
+
+textarea {
+    outline: none;
+    height: 92%;
+    width: 100%;
+    border-color: transparent;
+    resize: none;
+    overflow-y: scroll;
+}
+.hidden{
+    display: none;
+}

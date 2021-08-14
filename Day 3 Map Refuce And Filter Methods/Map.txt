@@ -1,0 +1,9 @@
+Map
+	
+return the new array contaiting all data that satisfied in our condition without changing the orignal array
+
+Differnce between ForEach and Map
+map retruns new array 
+forEach returns undefined
+map is chainable method we can use more methods with them for example reduce sort filter
+for each is undefined so there is no use of another methods with them

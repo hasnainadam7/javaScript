@@ -1,0 +1,12 @@
+-> TypeOF se data type dek skte hai 
+-> 2 bugs dkehe hamne like '9'-4 will be 5 but "9"+4 will be 94 they both concatenate by adding but subtract by subtracting
+or// null or undefined me fark null ki data type object hai or undefined it self ek type ka data hai but i think null ka data 
+type as object show hona ek bug hai q k jab usme koi value hi nhi to how it is object
+->true ki value 1 or false ki value 0 hoti hai for checking
+console.log(true + true )
+console.log(true - true )
+console.log(true + false)
+console.log(false + true )
+console.log(false - true )
+console.log(false - false)
+check kr skte hai app

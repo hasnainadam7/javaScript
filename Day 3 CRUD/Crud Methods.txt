@@ -1,0 +1,22 @@
+Push
+	its return the new length of Array
+	arr.push("dsa",2,true,undefined)
+	the add the element at the end 
+unshift
+	same as push but add element in beginning
+pop	
+	its remove the last element and changes the length of the array and retrun that array
+Shift 
+	same as pop but remvoe beginning of an array and retrun this element
+Splice (importand and complicated)
+	its use for many purposes
+	//like remove update and insert all 3 in one
+	//its return removed array
+	const months =["jan","March","April","June","july"]
+	console.log(months)
+	months.splice( 1 ,1,"decmber")
+	//          starting,deleting,adding
+
+	console.log(months)
+	//indexOF is using important role for this method
+	

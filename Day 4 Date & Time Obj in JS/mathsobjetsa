@@ -1,0 +1,19 @@
+random
+floor
+ceil
+sqrt
+round
+max
+min
+pow
+trunc
+
+random number generator
+console.log(Math.floor(Math.random()*10))
+
+
+trunc
+returns only integer value either negative or positive
+for example 
+if the value is positvie  its works as floor 
+else if its negative then work ase ceil

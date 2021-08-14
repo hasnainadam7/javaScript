@@ -1,0 +1,43 @@
+//for searching of a string index
+indexOf 
+lastIndexOf
+search
+
+//for Extracting String Parts
+
+Slice (Start ,end)(similar as splice)
+subString(Start ,end)
+Substr(Start ,length)
+
+
+ //Slice Method
+ //the return new part of extracted string
+ //his take 2 parameters the start position and the end position (end not incluede)
+
+
+ 
+//subString
+//Similar as slice but didnot accepte negative index
+
+
+//Substr
+similar as slice  but 2nd parameter is used to extract the length of string
+//mostly it is used for taking backward data //by negative 
+
+
+
+
+//Now Replacing String Methods
+
+replace(searchfor,replacewith)
+charAt(position=indexno)
+charCodeAt()//return uniCode 
+string[]
+
+
+//Other UseFull Methods  
+toUpperCase
+toLowerCase
+Concat
+trim// remove whitesspace from both sides 
+split //this convert string into array on the basis of any symbol or digit or alphabet

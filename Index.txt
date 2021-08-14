@@ -1,0 +1,35 @@
+0:00  Thapa Technical Introduction
+2:02  JavaScript Project Overview
+6:22  Subscribe Thapa Technical
+6:57  Why JavaScript? How Website Work
+11:40  Live Practical Example
+20:45  Install VS Code Editor
+(Day 1 Start) 24:30  Values and Variables in JS 
+(Day 1) 38:45  Data Types in JavaScript
+(Day 1) 47:52  Challenge Time 
+(Day 1 End) 55:18  Interview Question 
+(Day 2) 1:02  Interview Question
+(Day 2) 1:11:00  Expressions and Operators
+(Day 2) 2:04:15  Control Statements and Loops
+(Day 2) 3:47:00  ECMAScript 2015 (ES6) Part 1
+(Day 3) 4:19:45  Arrays in JavaScript
+(Day 4) 6:40:39  Strings in JavaScript
+(Day 4) 7:40:25  Date and Time in JavaScript
+(Day 4) 8:16:00  Math Object in JavaScript
+(Day 4) 8:33:00  DOM, BOM, WINDOW OBJECT 
+(Day 4)9:40:20  Events in JavaScript
+10:31:00  Timing Based Events 
+10:47:10  Interview Question
+11:16:45  ECMAScript 2015 to 2020  Part 2
+12:07:20  Advanced JavaScript Part 1
+12:31:20  Asynchronous JavaScript
+13:05:40  Event Loop in JavaScript 
+13:14:45  Advanced JavaScript Part 2
+13:26:25  Project 1 AJAX+XMLHTTPReq
+13:49:40  Project 2 Promises/Async-Await
+14:15:15  Project 3 Light Bulb ON OFF
+14:24:10  Project 4 Animated Thermometer
+14:36:48  Project 5 Temperature Converter
+15:03:05  Project 6 Increment Counter Web Page
+15:21:35  Final Project 7 Google Keep Clone
+16:20:16  Thapa Technical Outro

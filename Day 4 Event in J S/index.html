@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+   
+    <style>
+        body {
+            background-color: rgb(0, 102, 255)
+        }
+
+        .content {
+            text-align: center;
+            padding-top: 50px;
+
+        }
+
+        .button_su_linner {
+            width: 200px;
+            height: 100px;
+            border-radius: 3px;
+            background-color: goldenrod;
+            text-align: center;
+            margin-top: 25px;
+            box-shadow: none;
+            border-color: rgb(0, 102, 255);
+
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="content">
+        <h1>
+            Differnet Event types in JavaScript
+        </h1>
+        <div class="button_container">
+            <div class="btn_su">
+                <span class="su_btn_circle">
+
+
+                </span>
+                <button href="#" onclick="alert(' I am awesome but no one use me')" class="button_su_linner">
+                    <span class="btn_txt_container">
+                        Simple Inline Alert()
+                    </span>
+                </button>
+            </div>
+
+            <div class="btn_su">
+                <span class="su_btn_circle">
+
+
+                </span>
+                <button href="#" onclick="callingFunc()" class="button_su_linner">
+                    <span class="btn_txt_container">
+                        By Calling A Functiom
+                    </span>
+                </button>
+            </div>
+            <div class="btn_su">
+                <span class="su_btn_circle">
+
+
+                </span>
+                <button class="button_su_linner" id="thirdWay">
+
+                    <span class="btn_txt_container">Inline Events</span>
+
+
+                </button>
+            </div>
+            <div class="btn_su">
+                <span class="su_btn_circle">
+
+
+                </span>
+                <button href="#" id="fourthWay" class="button_su_linner">
+                    <span class="btn_txt_container">Event Listners</span>
+                </button>
+            </div>
+
+
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>

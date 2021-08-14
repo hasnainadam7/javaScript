@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            background-color: gray;
+            display: flex;
+            justify-content: center;
+            padding-top: 30px;
+        }
+
+
+
+        #parent {
+            padding-top: 30px;
+            width: 300px;
+            height: 400px;
+            display: flex;
+            justify-content: center;
+            background: red;
+            border-radius: 3px;
+        }
+
+        #child {
+            width: 150px;
+            height: 200px;
+            background-color: green;
+        }
+    </style>
+  
+    <title>Document</title>
+</head>
+
+<body>
+    <div style="padding-left :300px;">
+
+    </div>
+    <div id="parent">
+        parent Div
+        <div id="child">
+            Child Div
+        </div>
+    </div>
+ <script src="app.js"></script>
+</body>
+
+</html>

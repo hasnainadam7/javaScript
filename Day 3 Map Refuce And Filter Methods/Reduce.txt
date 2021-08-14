@@ -1,0 +1,4 @@
+//Reducers
+//its merge all values of aray (according to your conditions) and make it one
+//its add sums divide and product the aaray  
+//This is use for converting multidimensinal array to one   array

@@ -1,0 +1,34 @@
+windows
+this is main container and global object
+
+
+document
+this is child of windows object
+ 
+
+
+
+
+
+
+ document.body.children
+ //showing all the htlm elements of body
+document.body.hasChildNode
+ document.body.firstElementChild
+
+
+
+
+
+.querySelector
+.querySelectorAll//will tell u how many are there
+
+//
+getElementbyId
+this retruns reference of getElementbyId
+
+
+querySelector
+//this return the first element which retruns
+
+ 

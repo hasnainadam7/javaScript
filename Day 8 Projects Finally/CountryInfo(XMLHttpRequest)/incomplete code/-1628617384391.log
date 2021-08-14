@@ -1,0 +1,85 @@
+index.html:117 {name: "Pakistan", topLevelDomain: Array(1), alpha2Code: "PK", alpha3Code: "PAK", callingCodes: Array(1), …}
+const pas = new XMLHttpRequest();
+
+pas.open('GET', "https://restcountries.eu/rest/v2/name/"+select.value);
+pas.send();
+
+//to get the response
+pas.addEventListener('load', function () {
+
+    const [data] = JSON.parse(this.responseText)
+    console.log(data)
+
+    document.querySelector("#flags").src = data.flag
+    document.querySelector("#name").innerHTML = data.name
+    document.querySelector("#about").innerHTML = data.altSpellings
+    document.querySelector("#population").innerHTML = "Capital :" + data.capital 
+    document.querySelector("#capital").innerHTML = " Population :" + data.population.toLocaleString()
+    document.querySelector("#language").innerHTML = "Language :" + data.languages[1].nativeName
+})
+
+undefined
+VM9293:10 {name: "Andorra", topLevelDomain: Array(1), alpha2Code: "AD", alpha3Code: "AND", callingCodes: Array(1), …}
+const pas = new XMLHttpRequest();
+
+pas.open('GET', "https://restcountries.eu/rest/v2/name/"+select.value);
+pas.send();
+
+//to get the response
+pas.addEventListener('load', function () {
+
+    const [data] = JSON.parse(this.responseText)
+    console.log(data)
+
+    document.querySelector("#flags").src = data.flag
+    document.querySelector("#name").innerHTML = data.name
+    document.querySelector("#about").innerHTML = data.altSpellings
+    document.querySelector("#population").innerHTML = "Capital :" + data.capital 
+    document.querySelector("#capital").innerHTML = " Population :" + data.population.toLocaleString()
+    document.querySelector("#language").innerHTML = "Language :" + data.languages[1].nativeName
+})
+
+undefined
+VM9304:10 {name: "Armenia", topLevelDomain: Array(1), alpha2Code: "AM", alpha3Code: "ARM", callingCodes: Array(1), …}
+const pas = new XMLHttpRequest();
+
+pas.open('GET', "https://restcountries.eu/rest/v2/name/"+select.value);
+pas.send();
+
+//to get the response
+pas.addEventListener('load', function () {
+
+    const [data] = JSON.parse(this.responseText)
+    console.log(data)
+
+    document.querySelector("#flags").src = data.flag
+    document.querySelector("#name").innerHTML = data.name
+    document.querySelector("#about").innerHTML = data.altSpellings
+    document.querySelector("#population").innerHTML = "Capital :" + data.capital 
+    document.querySelector("#capital").innerHTML = " Population :" + data.population.toLocaleString()
+    document.querySelector("#language").innerHTML = "Language :" + data.languages[1].nativeName
+})
+
+undefined
+VM9318:10 {name: "Austria", topLevelDomain: Array(1), alpha2Code: "AT", alpha3Code: "AUT", callingCodes: Array(1), …}
+const pas = new XMLHttpRequest();
+
+pas.open('GET', "https://restcountries.eu/rest/v2/name/"+select.value);
+pas.send();
+
+//to get the response
+pas.addEventListener('load', function () {
+
+    const [data] = JSON.parse(this.responseText)
+    console.log(data)
+
+    document.querySelector("#flags").src = data.flag
+    document.querySelector("#name").innerHTML = data.name
+    document.querySelector("#about").innerHTML = data.altSpellings
+    document.querySelector("#population").innerHTML = "Capital :" + data.capital 
+    document.querySelector("#capital").innerHTML = " Population :" + data.population.toLocaleString()
+    document.querySelector("#language").innerHTML = "Language :" + data.languages[1].nativeName
+})
+
+undefined
+VM9333:10 {name: "Bahrain", topLevelDomain: Array(1), alpha2Code: "BH", alpha3Code: "BHR", callingCodes: Array(1), …}
