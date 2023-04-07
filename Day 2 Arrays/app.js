@@ -55,9 +55,9 @@
 
 
 //Seraching and Filter in an Array
-// var myFriendNames = ["vinod","bahadur","thapa","thapatechnical","thapa"];
+// var myFriendNames = ["hasnain","Adam","hasnainadam7","hasnainadam7@gmail.com","1234"];
 
-// console.log(myFriendNames.indexOf("thapa", 0));
+// console.log(myFriendNames.indexOf("hasnain", 0));
 // //                                 value   starting point    
 // var myFriendNames = ["vinod","bahadur","thapa","thapatechnical","thapa"];
 // //reveses searching
